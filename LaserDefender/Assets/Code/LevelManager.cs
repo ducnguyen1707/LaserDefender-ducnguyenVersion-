@@ -11,8 +11,9 @@ public class LevelManager : MonoBehaviour
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
     public void LoadGame(){
+        
+        SceneManager.LoadScene(1);
         scoreKeeper.ResetScore();
-        SceneManager.LoadScene("Game");
     }
 
     public void LoadMainMenu(){
@@ -25,7 +26,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void QuitGame(){
-        Debug.Log("Mother F*****");
+        
         Application.Quit();
     }
 
